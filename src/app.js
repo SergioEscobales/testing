@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import UserList from "./userList";
+import VoiceFavs from "./VoiceFavs";
 
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
@@ -19,7 +19,7 @@ export default class App extends Component {
             <Router>
                 <Switch>
                     <Route path="/" exact>
-                        <UserList
+                        <VoiceFavs
                             favorites={this.state.favorites}
                             clicked={this.addToFav}
                             list={this.state.favorites}
